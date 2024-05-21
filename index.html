@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- THIS IS OWNED BY: TERENCE MATTHEU L. TORCULAS BSIT 2B DATE FINISHED:05/19/2024-->
+<!-- EXPLAINATION FOR MY JAVASCRIPT HOW DOES IT WORKS-->
+<!-- This JavaScript code sets up an event listener to ensure that the functionality is applied once the DOM is fully loaded. It then adds click event listeners to all links within a navigation bar, implementing smooth scrolling to target sections and managing active link styles. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">Personal Portfolio.</a>
+        <nav class="navbar">
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#education" style="--i:2;">Education</a>
+            <a href="#skills" style="--i:3;">Skills</a>
+            <a href="#hobbies" style="--i:4;">Hobbies</a>
+            <a href="#photos" style="--i:5;">Photos</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-sci">
+            <a href="https://www.facebook.com/terencemattheu.torculas?mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>   
+            <a href="https://www.instagram.com/terencemattheu/"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://github.com/apropoidextv"><i class='bx bxl-github'></i></a>
+        </div>
+    
+        <div class="home-content">
+            <h1>Hi I'm Terence Mattheu Torculas</h1>
+            <h3>A Second Year Student BS Information Technology</h3>
+            <p>"Coding is the art of crafting digital solutions from the imagination's blueprint,
+                 where lines of logic converge into elegant algorithms. It's the language of innovation, 
+                 where creativity dances with precision, and ideas find form in the realm of ones and zeros.
+                 With each keystroke, a coder weaves a narrative of functionality, empowering machines
+                 to execute tasks and transcend limitations. In this realm of binary poetry, every 
+                 semicolon is a comma in the symphony of progress,
+                 where the language of machines becomes the canvas for human ingenuity to flourish."</p>
+            <a href="https://www.facebook.com/friends/add_friend.php?id=YOUR_USER_ID" class="btn">Let's Talk</a>
+        </div>
+
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="formal.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>About</h1>
+                <p>Hi, I'm Terence Mattheu L. Torculas. I live in Purok 8, Sitio Talahib, Barangay Trinidad, Calbayog City. I am 23 years old and currently studying at Northwest Samar State University (NwSSU). As a dedicated and passionate student with a strong background in photography, videography and programming. I have developed a keen eye for detail and a commitment to excellence through my 2 years of experience at ProVision Photography.</p>
+                <p>Career Objective:
+                    "To leverage my 2 years of experience in photography and videography, combined with my academic background from Northwest Samar State University (NwSSU), along with my growing proficiency in programming, to secure a dynamic role that integrates visual storytelling with technology in the media industry. My objective is to contribute to innovative multimedia projects that push the boundaries of creativity and technology. By continuously honing my skills in photography, videography, and programming, I aim to become a versatile multimedia specialist capable of delivering impactful and engaging content."</p>
+                <P>Mission Statement:
+                    "As a dedicated and passionate visual artist and programmer, my mission is to blend creativity with technology to craft compelling visual narratives that resonate with audiences. I strive to capture the beauty and essence of the world through photography and videography while harnessing the power of programming to enhance and innovate storytelling techniques. Committed to excellence and innovation, I aim to push the boundaries of multimedia content creation, inspiring and engaging viewers while contributing to the advancement of the media industry."</P>
+        </div>
+    </section>
+
+    <!-- New Video Section -->
+    <section class="video-section" id="video">
+        <div class="video-content">
+            <video controls class="about-video">
+            <source src="clip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <div class="education-content">
+            <h1>Education</h1>
+            <p>My academic journey has equipped me with the knowledge and skills necessary to excel in my field.</p>
+            <ul>
+                <li>Bachelor of Science in Information Technology - Northwest Samar State University (NwSSU)</li>
+                <li>Senior High School: San Policarpo National High School Year Graduated:  April 13, 2020</li>
+                <li>Junior High School: Trinidad National High School (Tri-NHS) Year Graduated:  April 06, 2018</li>
+                <li>Elementary School: Trinidad Central Elementary School Year Graduated:  March 31, 2014</li>
+                <!-- Add more educational achievements as needed -->
+            </ul>
+        </div>
+    </section>
+    
+    </section>
+    <section class="skills" id="skills">
+        <div class="skills-content">
+            <h1>Skills</h1>
+            <div class="skills-list">
+                <h2>Technical Skills:</h2>
+                <ul>
+                    <li>
+                        Photography:
+                        <div class="graph" data-rating="4">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li>
+                        Videography:
+                        <div class="graph" data-rating="4">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li>
+                        Programming (e.g., Python, JavaScript, Java):
+                        <div class="graph" data-rating="2">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <!-- Add more technical skills if needed -->
+                </ul>
+            </div>
+            <div class="skills-list">
+                <h2>Soft Skills:</h2>
+                <ul>
+                    <li>
+                        Creativity:
+                        <div class="graph" data-rating="4">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li>
+                        Attention to Detail:
+                        <div class="graph" data-rating="4">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <!-- Add more soft skills if needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="hobbies" id="hobbies">
+        <div class="hobbies-content">
+            <h1>Hobbies</h1>
+                <p>This is  a glimpse into the colorful tapestry of my passions beyond the realm of work. When I'm not immersed in the world of photography as a personal assistant, I'm indulging in a diverse array of hobbies that define who I am on a more personal level.</p>
+                <p>In the realm of visual arts, I unleash my creativity as an artist, using paint, canvas, and various mediums to translate my thoughts and emotions into tangible works of art. Each stroke of the brush or stroke of the pencil is a reflection of my innermost self, inviting viewers to explore the intricacies of the human experience.</p>
+                <p>And when it comes to capturing life's most precious moments, I step behind the lens as a wedding and event photographer. With an eye for detail and a commitment to storytelling, I strive to immortalize love, joy, and fleeting moments of beauty, creating timeless memories that will be cherished for years to come.</p>
+        </div>
+    </section>
+
+    <section class="photos" id="photos">
+        <div class="photos-content">
+            <h1>Photos</h1>
+            <img src="pic1.jpg" alt="Description of your image" class="photo">
+            <img src="pic2.jpg" alt="Description of your image" class="photo">
+            <img src="pic3.jpg" alt="Description of your image" class="photo">
+            <img src="pic4.jpg" alt="Description of your image" class="photo">
+        </div>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>
